@@ -61,4 +61,9 @@ footerLink.textContent = siteContent.footer.copyright
 footerLink.classList.add('bold');
 
 //Contact INFO//
-
+const contact =document.querySelector('section.contact')
+//contact.children[0].textContent = siteContent.contact['contact-h4']
+contact.querySelector('h4').textContent = siteContent.contact['contact-h4']
+contact.children[1].textContent = siteContent.contact['contact-h4']
+contact.querySelector('p:nth-of-type(2)').textContent = siteContent.contact['phone']
+contact.children[3].textContent = siteContent.contact['email']
