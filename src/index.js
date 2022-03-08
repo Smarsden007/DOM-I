@@ -48,4 +48,4 @@ const ctaImg = document.querySelector('#cta-img')
 ctaImg.src = siteContent.images['cta-img'];
 
 const middleImg = document.querySelector('#middle-img')
-middleImg.src = siteContent.images['middle-img'];
+middleImg.setAttribute('src', siteContent.images['accent-img'])
