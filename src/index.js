@@ -64,7 +64,7 @@ footerLink.classList.add('bold');
 const contact =document.querySelector('section.contact')
 //contact.children[0].textContent = siteContent.contact['contact-h4']
 contact.querySelector('h4').textContent = siteContent.contact['contact-h4']
-contact.children[1].textContent = siteContent.contact['contact-h4']
+contact.children[1].textContent = siteContent.contact['address']
 contact.querySelector('p:nth-of-type(2)').textContent = siteContent.contact['phone']
 contact.children[3].textContent = siteContent.contact['email']
 
@@ -87,5 +87,22 @@ const psBottom = bottomContent.querySelectorAll('p')
 psBottom[0].textContent = siteContent['main-content']['services-content']
 psBottom[1].textContent = siteContent['main-content']['product-content']
 psBottom[2].textContent = siteContent['main-content']['vision-content']
+
+
+//cta
+
+document.querySelector('.cta .cta-text h1').textContent = siteContent.cta.h1
+document.querySelector('.cta .cta-text button').textContent = siteContent.cta.button
+
+
+//NNavv Bar//
+
+const navLinks = document.querySelectorAll('header nav a')
+const navLinkTexts = Object.values(siteContent.nav)
+navLinks.forEach((link, idx) => {
+  link.textContent = navLinkTexts[idx]
+  link.classList.add('italic')
+})
+
 
 
